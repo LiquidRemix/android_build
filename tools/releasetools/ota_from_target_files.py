@@ -821,6 +821,13 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("Target: {}".format(target_info.fingerprint))
 
   script.AppendExtra("ifelse(is_mounted(\"/system\"), unmount(\"/system\"));")
+
+  model = GetBuildProp("ro.product.model", OPTIONS.info_dict)
+  build = GetBuildProp("ro.build.date", OPTIONS.info_dict)
+  script.Print("**********************************************");
+  script.Print("* Liquid Remix for %s             *"%(model));
+  script.Print("* Compiled on: %s  *"%(build));
+  script.Print("**********************************************");
   device_specific.FullOTA_InstallBegin()
 
   CopyInstallTools(output_zip)
@@ -880,6 +887,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     script.RunBackup("restore")
     script.Unmount("/system")
 
+  script.Print(" ")
+  script.Print("Flashing Kernel..")
   script.ShowProgress(0.05, 5)
   script.WriteRawImage("/boot", "boot.img")
 

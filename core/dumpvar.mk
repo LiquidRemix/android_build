@@ -13,6 +13,7 @@ print_build_config_vars := \
   TARGET_2ND_ARCH \
   TARGET_2ND_ARCH_VARIANT \
   TARGET_2ND_CPU_VARIANT \
+  TARGET_USE_SDCLANG
 
 ifeq ($(TARGET_BUILD_PDK),true)
 print_build_config_vars += \

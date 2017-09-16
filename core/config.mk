@@ -188,7 +188,6 @@ FIND_LEAVES_EXCLUDES := $(addprefix --prune=, $(SCAN_EXCLUDE_DIRS) .repo .git)
 $(call project-set-path-variant,recovery,RECOVERY_VARIANT,bootable/recovery)
 
 -include vendor/extra/BoardConfigExtra.mk
--include vendor/lineage/config/BoardConfigLineage.mk
 
 # The build system exposes several variables for where to find the kernel
 # headers:
@@ -966,7 +965,7 @@ include $(BUILD_SYSTEM)/ninja_config.mk
 include $(BUILD_SYSTEM)/soong_config.mk
 endif
 
-ifneq ($(LINEAGE_BUILD),)
+ifneq ($(LIQUID_BUILD),)
 ## We need to be sure the global selinux policies are included
 ## last, to avoid accidental resetting by device configs
 $(eval include device/lineage/sepolicy/common/sepolicy.mk)
@@ -978,10 +977,10 @@ $(eval include device/lineage/sepolicy/common/sepolicy.mk)
 -include $(TOPDIR)vendor/*/build/core/apicheck.mk
 
 # Rules for QCOM targets
--include $(TOPDIR)vendor/lineage/build/core/qcom_target.mk
+-include $(TOPDIR)vendor/liquid/build/core/qcom_target.mk
 
 # Rules for MTK targets
--include $(TOPDIR)vendor/lineage/build/core/mtk_target.mk
+-include $(TOPDIR)vendor/liquid/build/core/mtk_target.mk
 endif
 
 include $(BUILD_SYSTEM)/dumpvar.mk

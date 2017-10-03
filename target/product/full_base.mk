@@ -27,6 +27,10 @@ PRODUCT_PACKAGES := \
     libwnndict \
     WAPPushManager
 
+PRODUCT_PACKAGES += \
+    LiveWallpapers \
+    LiveWallpapersPicker
+
 # Additional settings used in all AOSP builds
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.config.ringtone=Zen.ogg \

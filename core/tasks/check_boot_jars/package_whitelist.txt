@@ -203,6 +203,11 @@ javax\.microedition\.khronos\.egl
 android
 
 ###################################################
+# telephony-common.jar
+com\.google\..*
+org\.codeaurora\..*
+
+###################################################
 # apache-xml.jar
 org\.apache\.xml\.res
 org\.apache\.xml\.utils

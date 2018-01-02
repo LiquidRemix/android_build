@@ -49,6 +49,7 @@ PRODUCT_PACKAGES += \
     ProxyHandler \
     QuickSearchBox \
     Settings \
+    SettingsBlackThemeOverlay \
     SettingsDarkThemeOverlay \
     SharedStorageBackup \
     StorageManager \

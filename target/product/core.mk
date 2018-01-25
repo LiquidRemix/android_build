@@ -35,6 +35,8 @@ PRODUCT_PACKAGES += \
     DownloadProviderUi \
     ExternalStorageProvider \
     FusedLocation \
+    GBoardDarkTheme \
+    GBoardBlackTheme \
     InputDevices \
     KeyChain \
     Keyguard \

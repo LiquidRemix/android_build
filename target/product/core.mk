@@ -33,6 +33,8 @@ PRODUCT_PACKAGES += \
     Contacts \
     DocumentsUI \
     DownloadProviderUi \
+    DuiBlackThemeOverlay \
+    DuiDarkThemeOverlay \
     ExternalStorageProvider \
     FusedLocation \
     InputDevices \

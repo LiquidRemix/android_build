@@ -51,8 +51,8 @@ PRODUCT_PACKAGES += \
     Settings \
     SettingsBlackThemeOverlay \
     SettingsDarkThemeOverlay \
-    DuiDarkTheme \
-    DuiBlackTheme \
+    DuiDarkThemeOverlay \
+    DuiBlackThemeOverlay \
     SharedStorageBackup \
     StorageManager \
     SubstratumService \

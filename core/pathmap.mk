@@ -93,6 +93,4 @@ FRAMEWORKS_BASE_SUBDIRS := \
 FRAMEWORKS_BASE_JAVA_SRC_DIRS := \
 	$(addprefix frameworks/base/,$(FRAMEWORKS_BASE_SUBDIRS))
 
-ifneq ($(LIQUID_BUILD),)
 -include $(TOPDIR)vendor/liquid/build/core/pathmap.mk
-endif

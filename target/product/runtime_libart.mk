@@ -71,8 +71,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     pm.dexopt.first-boot=extract \
-    pm.dexopt.boot=extract \
-    pm.dexopt.install=quicken \
+    pm.dexopt.boot=verify \
+    pm.dexopt.install=speed-profile \
     pm.dexopt.bg-dexopt=speed \
     pm.dexopt.ab-ota=speed \
     pm.dexopt.inactive=verify \

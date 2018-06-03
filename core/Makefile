@@ -1372,7 +1372,6 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(recovery_ramdisk) $(recovery_k
 		$(RECOVERYIMAGE_EXTRA_DEPS)
 		@echo ----- Genrating changelogs -------
 		$(hide) ./vendor/liquid/tools/changelog.sh
-		$(hide) mv $(PRODUCT_OUT)/Changelog.txt $(PRODUCT_OUT)/system/etc/changelog.txt
 		@echo ----- Making recovery image ------
 		$(call build-recoveryimage-target, $@)
 endif # BOARD_CUSTOM_BOOTIMG_MK

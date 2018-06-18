@@ -1370,7 +1370,7 @@ $(recovery_ramdisk): $(MINIGZIP) \
 ifndef BOARD_CUSTOM_BOOTIMG_MK
 $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(recovery_ramdisk) $(recovery_kernel) \
 		$(RECOVERYIMAGE_EXTRA_DEPS)
-		@echo ----- Genrating changelogs -------
+		@echo ----- Generating changelogs -------
 		$(hide) ./vendor/liquid/tools/changelog.sh
 		@echo ----- Making recovery image ------
 		$(call build-recoveryimage-target, $@)

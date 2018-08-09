@@ -398,6 +398,7 @@ ifdef property_overrides_split_enabled
 	$(hide) build/tools/post_process_props.py $@
 endif  # property_overrides_split_enabled
 endif  # TARGET_COPY_OUT_VENDOR=system
+	$(hide) build/make/tools/post_process_props.py $@ $(PRODUCTS.$(INTERNAL_PRODUCT).PRODUCT_VENDOR_PROPERTY_BLACKLIST)
 
 # ----------------------------------------------------------------
 
